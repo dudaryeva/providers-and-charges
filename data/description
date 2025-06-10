@@ -1,0 +1,27 @@
+The raw_data includes 3 tables: charges, providers, and charge_codes. The charges table is the main table, which is connected by IDs with the providers and charge_codes tables.
+
+
+сharges = list of practice sales with the following columns:
+id = primary key 
+customer_id = patient id
+unit_cost = price per unit 
+quantity = qty of items purchased
+amount = total amount 
+discounted_base_charge_amount = total amount after discount 
+charge_code_id = id from charge_codes table 
+provider_id = id from providers table 
+charge_input_date = date when provider enter data into the system 
+charge_service_date = date when the service was provided to patient
+charge_name = charge name 
+
+providers = list of practice providers 
+id = primary key
+firstname = provider first name
+lastname = provider last name 
+fullname = provider full name
+
+charge_codes 
+id = primary key
+name = charge name
+created_at = date when it was created in the database
+updated_at = date when it was updated in the database 
